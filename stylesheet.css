@@ -1,0 +1,34 @@
+.test {
+    border: 5px solid black;
+    width: 1000px;
+    height: 1000px;
+}
+
+.content {
+    border: 5px solid blue;
+}
+
+form {
+    width: 500px;
+    height: 300px;
+    padding: 25px;
+    display: grid;
+    border: 2px solid green;
+}
+
+.bookContainer {
+    border: 3px solid forestgreen;
+    width: 200px;
+    height: 400px;
+}
+
+.remove-button {
+    height: 25px;
+    width: 50px;
+}
+
+.read-status {
+    height: 25px;
+    width: 50px;
+    background-color: green;
+}
