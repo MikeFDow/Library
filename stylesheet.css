@@ -1,0 +1,77 @@
+.test {
+    border: 5px solid black;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 1200px;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+.content {
+    font-size: 25px;
+}
+
+form {
+    width: 500px;
+    height: 300px;
+    padding: 25px;
+    display: grid;
+    border: 2px solid green;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.bookContainer {
+    border: 3px solid forestgreen;
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(6,50px);
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.remove-button {
+    height: 35px;
+    width: 60px;
+}
+
+.read-status {
+    height: 35px;
+    width: 75px;
+    background-color: green;
+}
+
+body {
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-left: 13px;
+    
+}
+
+.header {
+    height: 150px;
+    width: auto;
+    font-size: 50px;
+    margin-top: 0%;
+    background-color: lightblue;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 45px;
+}
+
+.header-text {
+    position: relative; 
+    top: 30%;
+    left: 5%;
+    margin-top: 0%;
+    max-width: fit-content;
+}
