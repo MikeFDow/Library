@@ -109,10 +109,12 @@ function displayBooks() {
         status.classList.add('read-status');
         bookContainer.appendChild(status);
         status.onclick = function() {
-            if (read.textContent = "yes") {
-                read.textContent = "no";
-            } else if (read.textContent = "no") {
-                read.textContent = "yes";
+            switch (read.textContent) {
+                case "yes":
+                    read.textContent = "no";
+                    break;
+                case "no":
+                    read.textContent = "yes";
             }
             console.log(read.textContent);
         }
