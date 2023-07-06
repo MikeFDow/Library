@@ -11,7 +11,7 @@
 }
 
 .content {
-    border: 5px solid blue;
+    font-size: 25px;
 }
 
 form {
@@ -29,16 +29,20 @@ form {
 .bookContainer {
     border: 3px solid forestgreen;
     height: 300px;
+    display: grid;
+    grid-template-rows: repeat(6,50px);
+    border-radius: 5px;
+    justify-content: center;
 }
 
 .remove-button {
-    height: 25px;
-    width: 50px;
+    height: 35px;
+    width: 60px;
 }
 
 .read-status {
-    height: 25px;
-    width: 50px;
+    height: 35px;
+    width: 75px;
     background-color: green;
 }
 
@@ -49,14 +53,19 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    margin-left: 13px;
     
 }
 
 .header {
     height: 150px;
-    background-color: forestgreen;
+    width: auto;
     font-size: 50px;
     margin-top: 0%;
+    background-color: lightblue;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 45px;
 }
 
 .header-text {
@@ -64,4 +73,5 @@ body {
     top: 30%;
     left: 5%;
     margin-top: 0%;
+    max-width: fit-content;
 }

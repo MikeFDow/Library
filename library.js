@@ -1,3 +1,6 @@
+// new class branch
+
+
 const container = document.querySelector('.test');
 
 //const content = document.createElement('p');
@@ -88,9 +91,9 @@ function displayBooks() {
         author.classList.add('content');
         pages.classList.add('content');
         read.classList.add('content');
-        title.textContent = book.title;
-        author.textContent = book.author;
-        pages.textContent = book.pages;
+        title.textContent = "Title:" + " " + book.title;
+        author.textContent = "Author:" + " " + book.author;
+        pages.textContent = "# of pages:" + " " + book.pages;
         read.textContent = book.read;
         bookContainer.appendChild(title);
         bookContainer.appendChild(author);
@@ -100,6 +103,7 @@ function displayBooks() {
 
         const remove = document.createElement('button');
         remove.classList.add('remove-button');
+        remove.appendChild(document.createTextNode("Remove"));
         bookContainer.appendChild(remove);
         remove.onclick = function() {
             bookContainer.remove();
@@ -107,6 +111,7 @@ function displayBooks() {
 
         const status = document.createElement('button');
         status.classList.add('read-status');
+        status.appendChild(document.createTextNode("Have you read this?"))
         bookContainer.appendChild(status);
         status.onclick = function() {
             switch (read.textContent) {
