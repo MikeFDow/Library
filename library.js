@@ -14,34 +14,20 @@ const container = document.querySelector('.test');
 
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
-    this.title = title 
-    this.author = author
-    this.pages = pages 
-    this.read = read 
-    this.info = function() {
-        return title + ', ' + author + ', ' + pages + ', ' + read;
+class Book {
+
+    constructor(title, author, pages, read) {
+        this.title = title 
+        this.author = author
+        this.pages = pages 
+        this.read = read 
+        this.info = function() {
+            return title + ', ' + author + ', ' + pages + ', ' + read;
+        }
+
     }
-}
+};
 
-/*
-function addBookToLibrary() {
-    const book = new Book("this sucks");
-    myLibrary.push(book);
-    console.log(myLibrary);
-}
-*/
-
-
-// uses prompt to add new books
-/*
-function addBookToLibrary() {
-    const userBook = new Book(prompt("book title??"), prompt("author?"));
-    myLibrary.push(userBook);
-
-    
-}
-*/
 
 
 // uses form to add new books
